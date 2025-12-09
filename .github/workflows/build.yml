@@ -15,7 +15,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           native-image-job-reports: 'true'
       - name: Build Native Image
-        run: native-image -jar tuntunsahur.jar tuntunSahur --no-fallback -Djava.awt.headless=false
+        run: native-image -jar tuntunsahur.jar tuntunSahur --no-fallback
       - name: Create Windows VBS Launcher
         shell: pwsh
         run: |
